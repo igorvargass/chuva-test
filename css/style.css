@@ -5,7 +5,6 @@ body{
     font-family: 'Roboto', sans-serif;
     width: 1366px;
     height: 1701px;
-    display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
     background-color: white;
@@ -18,29 +17,29 @@ html{
     background-color: #FDF1EB;
     width: 1146px;
     height: 68px;
-    display: flex;
+    display: block;
     align-items: center;
+    float: right;
+
 }
 .nav-title{
     font-size: 22px;
 }
-.nav-div-texts{
+.nav-p1, .nav-title, .nav-p2{
     color: #725C5C;
+    justify-content: flex-start;
 }
-.nav-p1{
-    float: left;
+.nav-div a{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-p1, .nav-p2{
     font-size: 14px;
     line-height: 16px;
 }
 .nav-title{
-    float: left;
     font-size: 22px;
     line-height: 26px;
-}
-.nav-p2{
-    float: left;
-    font-size: 14px;
-    line-height: 16px;
 }
 .nav-div-input{
     width: 97px;
@@ -78,6 +77,7 @@ html{
     margin-right: 5px;
     width: 220px;
     height: 1701px;
+    position: absolute;
 }
 .aside-left-bar{
     height: 536px;
@@ -95,15 +95,45 @@ html{
     line-height: 35px;
     color: white;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 .aside-left-bar a{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 30px;
     align-content: stretch;
+    align-items: center;
     height: 33px;
     font-family: 'Quicksand', sans-serif;
     list-style: none;
     text-decoration: none;
     color:#725C5C;
     margin-bottom: 5px;
+}
+.aside-left-trabalhos{
+    background: #FDF1EB;
+    
+    flex-direction: row-reverse;
+}
+.aside-left-trabalhos-retangulo{
+    width: 5px;
+    height: 33px;
+    background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+    display: inline;
+}
+
+/*content*/
+.content-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #ED7839;
+}
+.content{
+    float: right;
+    word-wrap: normal;
+    
 }
