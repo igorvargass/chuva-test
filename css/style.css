@@ -135,5 +135,18 @@ html{
 .content{
     float: right;
     word-wrap: normal;
-    
+}
+.content-section-header{
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0px 0px;
+    width: 1058px;
+    height: 45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #4E4E4E;
+    font-weight: bold;
 }
